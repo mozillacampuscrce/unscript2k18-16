@@ -13,7 +13,7 @@ if($username=="admin" && $password=="password"){
 		redirect('http://localhost/ams/unscript2k18-16/admin.html');
 		echo "Valid Login";
 }
-	else {
+else {
 	echo "Invalid Login";
 }
 ?>
