@@ -15,6 +15,6 @@ echo $username ."   "  .$password ;
 		echo "Valid Login";
 	}
 	else {
-		echo "Invalid Login";
+	echo "Invalid Login";
 	}
 ?>
