@@ -11,7 +11,7 @@
 	$userid=$_POST['emailid'];
 	$mobileno=$_POST['mobileno'];
 
-	echo $name ."   "  .$username."  ".$password;
+echo $name ."   "  .$username."  ".$password;
 
 	$sql="INSERT INTO `students` (`username`,`password`,`name`,`email_id`,`class`,`division`,`branch`,`roll_no`,`contact_no`) VALUES('$username','$password','$name','$userid','$class','$division','$branch','$rollno','$mobileno')";
 
