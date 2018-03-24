@@ -1,5 +1,4 @@
 {
-  "require": {
-      "swiftmailer/swiftmailer": "^6.0"
+  "require": {      "swiftmailer/swiftmailer": "^6.0"
     }
 }
