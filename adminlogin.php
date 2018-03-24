@@ -1,5 +1,5 @@
 <?php
-	echo "dhgjgkhj";
+echo "dhgjgkhj";
 	$username=$_POST['username'];
 	$password=$_POST['password'];
 	function redirect($url) {
