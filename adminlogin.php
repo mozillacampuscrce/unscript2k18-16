@@ -1,6 +1,5 @@
 <?php
-echo "dhgjgkhj";
-	$username=$_POST['username'];
+echo "dhgjgkhj";	$username=$_POST['username'];
 	$password=$_POST['password'];
 	function redirect($url) {
     	ob_start();
