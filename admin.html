@@ -1,41 +1,100 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.btn-group button {
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 80px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-    align-content:center;
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
 }
 
-.btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-    background-color: #3e8e41;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
 </style>
+</head>
 <body>
 
-<h1 align="center">Button Group</h1>
+<H1 align='center'>ATTENDANCE MANAGEMENT SYSTEM</H1>
 
-<div class="btn-group">
-  <button>Add</button>
-  <button>Update</button>
-  <button>Delete</button>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">ADD</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">FACULTY</a>
+    <a href="#about">STUDENT</a>
+    <a href="#contact">PARENT</a>
+  </div>
 </div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">DELETE</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">FACULTY</a>
+    <a href="#about">STUDENT</a>
+    <a href="#contact">PARENT</a>
+  </div>
+</div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">UPDATE</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">FACULTY</a>
+    <a href="#about">STUDENT</a>
+    <a href="#contact">PARENT</a>
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </body>
 </html>
