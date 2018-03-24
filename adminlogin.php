@@ -10,7 +10,7 @@ echo "dhgjgkhj";	$username=$_POST['username'];
 echo $username ."   "  .$password ;
 if($username=="admin" && $password=="password"){
 		echo "Valid Login";
-		redirect('http://localhost/ams/unscript2k18-16/admin.html');
+	redirect('http://localhost/ams/unscript2k18-16/admin.html');
 		echo "Valid Login";
 }
 else {
