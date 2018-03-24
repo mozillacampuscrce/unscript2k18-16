@@ -21,5 +21,4 @@ $sql="INSERT INTO `students` (`username`,`password`,`name`,`email_id`,`class`,`d
 }
 
 mysqli_close($conn):
-
 ?>
