@@ -13,5 +13,4 @@ $db_name="ams";
 	// $row=mysqli_fetch_assoc($result);
 	// print_r($row);
 	//mysqli_close($conn);
-
 ?>
