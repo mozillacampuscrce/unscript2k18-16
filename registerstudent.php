@@ -5,7 +5,6 @@
 	$username=$_POST['username'];
 	$password=$_POST['password'];
 	$branch=$_POST['branch'];
-	
 	$class=$_POST['class'];
 	$division=$_POST['division'];
 	$rollno=$_POST['rollno'];
