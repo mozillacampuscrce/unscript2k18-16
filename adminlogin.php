@@ -8,7 +8,7 @@
     	ob_end_flush();
     	die();
 	};
-	echo $username ."   "  .$password ;
+echo $username ."   "  .$password ;
 	if($username=="admin" && $password=="password"){
 		echo "Valid Login";
 		redirect('http://localhost/ams/unscript2k18-16/admin.html');
