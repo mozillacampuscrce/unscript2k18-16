@@ -14,5 +14,4 @@ $db_name="ams";
 	// print_r($row);
 	//mysqli_close($conn);
 
-
 ?>
